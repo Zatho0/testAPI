@@ -37,5 +37,6 @@ function getUsers() {
 getUsers() // Récupère la liste des utilisateurs au chargement de la page
 sub.addEventListener('click', (e) => {
     addUser(input.value)
+    input.value = "" // Réinitialise le champ de saisie
 })
 
