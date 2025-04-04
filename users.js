@@ -3,7 +3,7 @@ let sub = document.querySelector('button')
 
 
 function addUser(username) {
-    fetch("http://localhost:3000/users", {
+    fetch("http://192.168.60.119:3000/users", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username }) // Envoie le pseudo en JSON
@@ -16,12 +16,12 @@ function addUser(username) {
 
 function AfficheUser(username) {
     let div = document.createElement('div')
-    div.innerHTML = username
+    div.textContent = username
     document.body.appendChild(div)
 }
 
 function getUsers() {
-    fetch("http://localhost:3000/users",{
+    fetch("http://192.168.60.119:3000/users",{
         method: "GET",
         headers: { "Content-Type": "application/json" }
     })

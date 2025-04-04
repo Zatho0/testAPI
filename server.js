@@ -48,4 +48,5 @@ app.post('/users', (req, res) => {
 });
 
 const PORT = 3000;
-app.listen(PORT, () => console.log(`🚀 Serveur API en ligne sur http://localhost:${PORT}/users`));
+
+app.listen(PORT, () => console.log(`🚀 Serveur API en ligne sur http://192.168.60.119:${PORT}/users`));
